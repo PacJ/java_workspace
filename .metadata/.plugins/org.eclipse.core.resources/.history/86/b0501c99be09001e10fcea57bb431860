@@ -1,0 +1,13 @@
+package problems0613;
+
+public class Problem1 {
+
+	public static void main(String[] args) {
+		Book b1=new Book("멋진 신세계", "올더스 헉슬리");
+
+		Book b2=new Book("더 해빙");
+
+		Book b3=new Book();
+	}
+
+}

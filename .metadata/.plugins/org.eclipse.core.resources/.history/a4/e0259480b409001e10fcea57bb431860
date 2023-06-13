@@ -1,0 +1,33 @@
+package Test;
+
+class Tv{
+	public void on() {
+		System.out.println("비버는 댐은 쌓아올린다.");
+	}
+}
+
+interface Computer{
+	public void m(); //추상 메소드
+}
+
+class Com {
+	public void m() {
+		System.out.println("댐");
+	}
+}
+
+class Ipad extends Tv implements Computer {
+	@Override
+	public void m() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
+public class A0613_Interface2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package Test;
+
+public class A0613_tryCatch {
+
+	public static void main(String[] args) {
+		System.out.println("양수 입력");
+		
+		try {
+			int n = in(); //예외가 발생 할 수도 있는 코드
+			System.out.println(n);
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+
+	}
+	public static int in() {
+		return 0;
+	}
+
+}

@@ -1,0 +1,33 @@
+package Test;
+
+class Circle {
+	int rad;
+	
+	public Circle() {
+	}
+	
+	public Circle(int rad) {
+		this.rad = rad;
+	}
+
+	public double area() {
+		return rad*rad*3.14;
+	}
+}
+
+public class A0612_ObjectArray {
+
+	public static void main(String[] args) {
+		
+		// Circle객체 4개가 담길 Circle의 array 생성
+		Circle [] arr = new Circle[4]; 
+		
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = new Circle(i); // 객체 생성 코드
+			//객체 4개를 생성해서 배열 위치에 저장
+			System.out.println(arr[i].area());
+		}
+
+	}
+
+}

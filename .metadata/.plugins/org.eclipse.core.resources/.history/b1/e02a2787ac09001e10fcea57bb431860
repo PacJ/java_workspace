@@ -1,0 +1,18 @@
+package Test;
+
+public class A0613_tryCatch {
+
+	public static void main(String[] args) {
+		System.out.println("양수 입력");
+		
+		try {
+			int n = in();
+			System.out.println(n);
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

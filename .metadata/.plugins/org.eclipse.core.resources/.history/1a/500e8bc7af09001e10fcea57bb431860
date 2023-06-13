@@ -1,0 +1,15 @@
+package Test;
+
+interface Addin{
+	
+	public int add(int a, int b);
+}
+
+public class A0613_Interface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

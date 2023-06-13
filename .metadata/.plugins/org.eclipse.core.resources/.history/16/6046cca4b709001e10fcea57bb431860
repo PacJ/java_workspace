@@ -1,0 +1,12 @@
+package Test;
+
+public class A0613_boxing {
+
+	public static void main(String[] args) {
+		Integer i = new Integer(10); // boxing
+		int i1 = i.intValue();
+		System.out.println(i);
+
+	}
+
+}

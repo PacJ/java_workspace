@@ -1,0 +1,11 @@
+package problems0613;
+
+//6. 인터페이스 Po를 만들고 추상메소드 pr을 만들어라. 상속받아 구현해라.
+public class Problem2 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

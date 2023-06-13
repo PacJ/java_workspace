@@ -1,0 +1,27 @@
+package Test;
+
+class Person {
+	private String name;
+	
+	public Person(String name) {
+		this.name = name;
+	}
+	
+	public void name() {
+		System.out.println(name);
+	}
+}
+
+public class A0612_Inheritance {
+
+	public static void main(String[] args) {
+		
+		Person p = new Person("아카");
+		p.name();
+		
+		Student s = new Student("키아누", "컴퓨터", "컴공");
+		s.show();
+
+	}
+
+}

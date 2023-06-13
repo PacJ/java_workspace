@@ -1,0 +1,20 @@
+package Test;
+
+interface Addin{
+	
+	public int add(int a, int b);
+	public int add(int a);
+	
+	default void pr() {
+		System.out.println("히히");
+	}
+	
+}
+
+public class A0613_Interface {
+
+	public static void main(String[] args) {
+
+	}
+
+}

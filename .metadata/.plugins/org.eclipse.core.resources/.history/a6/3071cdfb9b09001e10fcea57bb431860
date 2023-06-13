@@ -1,0 +1,25 @@
+package Problems;
+
+class Tv{
+	
+	private int size;
+	
+	Tv(int size){
+		
+		this.size=size; }
+	
+	protected int getsize(){
+		
+		return size; }
+	
+}
+
+public class prob34 {
+
+	public static void main(String[] args) {
+		Tv1 t=new Tv1(20, “삼성”); 
+		
+		t.show();} //삼성 20인치 Tv 출력
+
+
+}

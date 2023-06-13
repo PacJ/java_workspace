@@ -1,0 +1,15 @@
+package Test;
+
+class Tv{
+	public void on() {
+		System.out.println("비버는 댐은 쌓아올린다.");
+	}
+}
+
+public class A0613_Interface2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

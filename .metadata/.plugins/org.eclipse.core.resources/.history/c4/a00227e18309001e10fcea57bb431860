@@ -1,0 +1,28 @@
+package Test;
+
+public class A0612 {
+
+	public static void main(String[] args) {
+		int n=-1;
+		
+//		while(true) {
+//			n++;
+//			if(n%5==0 && n!=0) {
+//				continue;
+//			}
+//			if(n>30) {
+//				break;
+//			}
+//			System.out.println(n);
+//		}
+		
+		for(int i=0; i<30 && i%5!=0; i++) {
+//			if(i%5==0) {
+//				continue;
+//			}
+			System.out.println(i);
+		}
+
+	}
+
+}

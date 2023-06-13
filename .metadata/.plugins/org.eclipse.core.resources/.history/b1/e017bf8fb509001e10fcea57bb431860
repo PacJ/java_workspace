@@ -1,0 +1,45 @@
+package Test;
+
+class Tv{
+	public void on() {
+		System.out.println("비버는 댐은 쌓아올린다.");
+	}
+}
+
+interface Computer{
+	public void m(); //추상 메소드
+}
+
+class Com {
+	public void m() {
+		System.out.println("댐");
+	}
+}
+
+class Ipad extends Tv implements Computer {
+	
+	Com c = new Com();
+	
+	@Override
+	public void m() { //오버라이딩(Computer인터페이스에 있는 함수 재정의)
+		c.m();
+		System.out.println("오리너구리는 아이패드를 사용하지 못한다. 왜? 손가락이 없거든.");
+	}
+	
+	public void ip() {
+		m();
+		on();
+	}
+}
+
+public class A0613_Interface2 {
+
+	public static void main(String[] args) {
+
+		Ipad ip = new Ipad();
+		ip.m();
+		ip.on();
+		ip.ip();
+	}
+
+}

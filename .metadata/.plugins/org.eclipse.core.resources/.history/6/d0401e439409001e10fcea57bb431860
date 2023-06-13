@@ -1,0 +1,17 @@
+package Test;
+
+class Circle {
+	public Circle() {
+	}
+
+}
+
+public class A0612_ObjectArray {
+
+	public static void main(String[] args) {
+		
+		Circle [] arr = new Circle[4]; 
+
+	}
+
+}

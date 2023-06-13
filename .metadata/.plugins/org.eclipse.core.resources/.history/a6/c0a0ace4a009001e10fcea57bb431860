@@ -1,0 +1,12 @@
+package Problems;
+//5. 0 이러한 모양 출력해라
+//012
+//01234
+//0123456
+public class Prob5 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

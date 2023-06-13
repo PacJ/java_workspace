@@ -1,0 +1,27 @@
+package Test;
+
+public class A0612_Function {
+	//	반환형 함수명(매개변수){}
+	static void pro(int age) {
+		System.out.println("안녕");
+		System.out.println("나이는" + age + "이다");
+	}
+	
+	static double area(double rad) {
+		System.out.println(rad);
+		return area;
+	}
+	
+	public static void main(String[] args) {
+		
+		//메소드는 반드시 클래스 안에 있어야함(캡슐화 원칙)
+		System.out.println("시작");
+		pro(2);
+		pro(53);
+		System.out.println("끝");
+		
+		System.out.println("원의 넓이:" +area(5.5));
+		System.out.println("원의 넓이:" +round(3.2));
+		
+	}
+}

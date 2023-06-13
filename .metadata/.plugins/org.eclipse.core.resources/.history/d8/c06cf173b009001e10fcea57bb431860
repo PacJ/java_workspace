@@ -1,0 +1,33 @@
+package Test;
+
+interface Addin{
+	
+	public int add(int a, int b);
+	public int add(int a); // 오버로딩
+	
+	default void pr() {
+		System.out.println("히히");
+	}
+}
+
+class Add implements Addin {
+
+	@Override
+	public int add(int a, int b) {
+		return 0;
+	}
+
+	@Override
+	public int add(int a) {
+		return 0;
+	}
+	
+}
+
+public class A0613_Interface {
+
+	public static void main(String[] args) {
+
+	}
+
+}

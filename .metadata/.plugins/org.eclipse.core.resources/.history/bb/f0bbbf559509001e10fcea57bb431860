@@ -1,0 +1,13 @@
+package Test;
+
+public class A0613_Casting {
+
+	public static void main(String[] args) {
+		
+		//업캐스팅 다운캐스팅 -> 다형성, 상속
+		Person p = new Student("길동");
+		
+		Person p2 = new Person("길동");
+	}
+
+}

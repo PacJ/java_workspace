@@ -1,0 +1,11 @@
+package Test;
+
+public class A0612_Score {
+
+	public static void main(String[] args) {
+		
+		int [][] grade = {{90, 100, 80},{70,95,87},{80,90,70},{90,100,100}};
+
+	}
+
+}

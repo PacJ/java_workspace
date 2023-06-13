@@ -1,0 +1,15 @@
+package Problems;
+
+//7. 두 개 배열에서 영어단어를 입력받아 한글을 출력하는 프로그램
+
+public class Prob7 {
+
+	public static void main(String[] args) {
+
+	String eng[]={"student","book","future","note"};
+	
+	String kor[]={"학생","책","미래","노트"};
+
+	}
+
+}

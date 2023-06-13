@@ -1,0 +1,21 @@
+package Test;
+
+abstract class Car {
+	String name; // 필드
+	
+	void run() {
+		System.out.println(name+ " 차가 달린다.");
+	}
+}
+
+class myCar extends Car {
+	
+}
+
+public class A0613_Abstract {
+
+	public static void main(String[] args) {
+
+	}
+
+}

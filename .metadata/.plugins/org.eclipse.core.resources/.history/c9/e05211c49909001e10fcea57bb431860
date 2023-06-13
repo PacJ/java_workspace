@@ -1,0 +1,39 @@
+package Test;
+
+abstract class Car {
+	String name; // 필드
+	
+	void run() {
+		System.out.println(name+ " 차가 달린다.");
+	}
+	
+	abstract void stop(); //추상 메소드(빈껍데기 함수);
+}
+
+class myCar extends Car {
+	
+	public myCar() {
+		name="인피니티";
+	}
+	
+	public myCar(String name) {
+		this.name = name;
+	}
+
+	@Override
+	void stop() {
+		System.out.println(name+"가 멈췄다");
+	}
+}
+
+public class A0613_Abstract {
+
+	public static void main(String[] args) {
+		myCar car = new myCar();
+		myCar car2 = new myCar("지게차");
+	
+		car.stop();
+		car2.stop();
+	}
+
+}

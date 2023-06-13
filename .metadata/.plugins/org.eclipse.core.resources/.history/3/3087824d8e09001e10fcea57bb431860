@@ -1,0 +1,39 @@
+package Test;
+
+class AAA {
+	public void ride() {
+		System.out.println("탄다 나는 말을");
+	}
+	
+	public void load() {
+		System.out.println("로딩중");
+	}
+}
+
+class BBB {
+	public void ride() {
+		System.out.println("탄다 나는 말을");
+	}
+	
+	public void load() {
+		System.out.println("로딩중");
+	}
+}
+
+public class A0612_Overload_Override {
+
+	public static void main(String[] args) {
+		
+		AAA a = new AAA(); //객체 생성
+		a.ride();
+		a.load();
+		
+		
+		BBB b = new BBB();
+		b.ride();
+		b.load(10);
+		//오버라이딩 vs 오버로딩
+
+	}
+
+}

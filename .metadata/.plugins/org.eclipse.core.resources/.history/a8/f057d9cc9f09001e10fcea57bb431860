@@ -1,0 +1,27 @@
+package Problems;
+
+
+class Circle{
+
+private double r;
+
+circle(double r){
+
+this.r=r;
+
+}
+
+double area(){
+
+return 3.14*r*r;
+
+}
+
+public class Prob3_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

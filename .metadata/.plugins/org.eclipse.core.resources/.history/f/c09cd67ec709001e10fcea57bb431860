@@ -1,0 +1,44 @@
+package problems0613;
+
+//5. equals(두 원의 면적이 같은지 비교), toString메소드를 사용하여 완성시켜라.
+//(반지름이 30임)
+
+class Circle {
+	int rad;
+	
+	public Circle() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Circle(int rad) {
+		this.rad = rad;
+	}
+	
+	public String toString() {
+		return Double.toString(rad *rad*3.14);
+	}
+}
+
+public class Problem5 {
+
+	public static void main(String[] args) {
+		Circle a=new Circle(30);
+
+		Circle b=new Circle(30);
+
+		System.out.println("반지름"+a.rad);
+
+		System.out.println("반지름"+b.rad);
+		System.out.println(a);
+		System.out.println(b.toString());
+
+		if(a.toString().equals(b.toString())) {
+			System.out.println("같은 원"); 
+		}
+
+		else {
+			System.out.println("다른 원");
+		}
+	}
+
+}

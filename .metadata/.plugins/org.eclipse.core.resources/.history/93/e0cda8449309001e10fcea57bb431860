@@ -1,0 +1,21 @@
+package Test;
+
+class Score {
+	double grade;
+	
+	public Score() {
+	}
+}
+
+public class A0612_Score {
+
+	public static void main(String[] args) {
+		
+		int [][] grade = {{90, 100, 80},{70,95,87},{80,90,70},{90,100,100}};
+		
+		Score s = new Score();
+		s.show(grade);
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package Problems;
+
+public class Prob4 {
+
+	public static void main(String[] args) {
+		Shape s = new Shape();
+		
+		Shape s1 = new Shape(2,5);
+		
+		s.pr(“@”); 
+		
+		s1.pr(“#”);
+		
+		s.show(); //@@@-> 1행 3열로 출력
+		
+		s.show(); //#####->2행 5열로 출력
+		
+		//#####
+
+
+}

@@ -1,0 +1,36 @@
+package Test;
+
+
+public class A0613_boxing {
+
+	public static void main(String[] args) {
+		Integer i = new Integer(10); // boxing(기본데이터타입 -> 객체화 시켜서 포장)
+		Integer j = 25; //오토박싱(new 키워드 사용 없이 자동으로 박싱이 된다.)
+		int i1 = i.intValue(); //unboxing(객체화 된 타입 -> 기본 타입으로 다시 벗김)
+		System.out.println(i1);
+		System.out.println(i);
+
+		Character c = new Character('a');
+		char c1 = c.charValue();
+		
+		Boolean b = new Boolean(true);
+		boolean b1 = b.booleanValue();
+		
+		//문자열을 기본타입으로 변환!!
+		int z = Integer.parseInt("25");
+		System.out.println(z);
+		boolean b2 = Boolean.parseBoolean("true");
+		System.out.println(b2);
+		double d2=Double.parseDouble("3.14159265358979323846264");
+		System.out.println(d2);
+		
+		String s = Integer.toString(123);
+		//정수형 객체 123을 문자열로 반환
+		System.out.println(s);
+		
+		Integer i11=100; // auto boxing
+		int n1 = i11+200;
+		System.out.println(n1);
+	}
+
+}

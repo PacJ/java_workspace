@@ -1,0 +1,19 @@
+package Test;
+
+public class A0612_Overload_Override {
+
+	public static void main(String[] args) {
+		
+		AAA a = new AAA(); //객체 생성
+		a.ride();
+		a.load();
+		
+		
+		BBB b = new BBB();
+		b.ride();
+		b.load(10);
+		//오버라이딩 vs 오버로딩
+
+	}
+
+}

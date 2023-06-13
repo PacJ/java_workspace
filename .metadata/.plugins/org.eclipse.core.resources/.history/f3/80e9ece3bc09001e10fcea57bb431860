@@ -1,0 +1,14 @@
+package problems0613;
+
+public class Problem6 {
+
+	public static void main(String[] args) {
+		Re r=new Rec(10,20);
+
+		r.show(); //"사각형!!" 출력
+
+		System.out.println("면적" + r.area());
+
+	}
+
+}

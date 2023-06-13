@@ -1,0 +1,94 @@
+package Test;
+
+import java.util.Scanner;
+
+class PhoneNum{
+	String name;
+	String phone;
+	
+	PhoneNum(String n, String p){
+		name = n;
+		phone = p;
+	}
+	
+	void show() {
+		System.out.println("이름: " + name);
+		System.out.println("번호 : " + phone);
+	}
+}
+
+class School extends PhoneNum {
+	String major;
+	
+	School(String n, String p, String major) {
+		super(n,p);
+		this.major = major;
+	}
+	
+	void show() { //오버라이딩
+		super.show();
+		System.out.println("전공 : " + major);
+	}
+}
+
+class Worker extends PhoneNum {
+	String grade;
+	
+	Worker(String n, String p, String g) {
+		super(n,p);
+		grade=g;
+	}
+	
+	void show() { //오버라이딩
+		super.show(); // 이름, 번호
+		System.out.println("직급 : " + grade);
+	}
+}
+
+class Arr {
+	PhoneNum [] arr; //객체배열 선언
+	int n;
+	
+	public Arr(int n) {
+		arr=new PhoneNum[n]; // 배열 생성코드
+		n=0;
+	}
+	
+	void add(PhoneNum p) {
+		arr[n++]=p; //친구 추가
+	}
+	
+	void friend(char ch) {
+		Scanner s = new Scanner(System.in);
+			System.out.println("이름 : ");
+			String name = s.next();
+			
+			System.out.println("번호 : ");
+			String num = s.next();
+			
+			switch(ch) {
+			case 'A':
+				System.out.println("전공 : ");
+				String major=s.next();
+				
+				//PhoneNum p = new School(name, num, major)
+				add(new School(name, num, major));
+				break;
+				
+			case 'B':
+				System.out.println("직급 : ");
+				String grade=s.next();
+				
+				//PhoneNum p = new School(name, num, major)
+				add(new School(name, num, major));
+				break;
+			}
+	}
+}
+public class A0612_PhoneNum {
+
+	public static void main(String[] args) {
+
+	}
+
+}

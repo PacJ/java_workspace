@@ -1,0 +1,52 @@
+package Test;
+
+final class Person {
+	private String name;
+	
+	public Person() {
+	}
+	
+	public Person(String name) {
+		this.name = name;
+	}
+	
+	public void show() {
+		System.out.println(name);
+	}
+}
+
+class Student extends Person {
+	
+	private String device;
+	private String major;
+	
+	public Student() {
+	}
+	
+	public Student(String name, String device, String major) {
+		super(name);
+		this.device = device;
+		this.major = major;
+	}
+	
+	@Override
+	public void show() {
+		super.show();
+		System.out.println(device + "," +  major);
+	}
+	
+}
+
+public class A0612_Inheritance {
+
+	public static void main(String[] args) {
+		
+		Person p = new Person("아카");
+		p.show();
+		
+		Student s = new Student("키아누", "컴퓨터", "컴공");
+		s.show();
+
+	}
+
+}

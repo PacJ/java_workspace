@@ -1,0 +1,33 @@
+package Test;
+
+class Profile {
+	int age;
+	String name;
+	
+	public Profile() {
+		
+	}
+	
+	public Profile(int age, String name) {
+		
+	}
+	
+	public void show() {
+		System.out.println(age + " " + name);
+		
+	}
+}
+
+public class A0612_Class {
+
+	public static void main(String[] args) {
+		
+		Profile p1 = new Profile();
+		
+		p1.age=22;
+		p1.name="원박";
+		p1.show();
+
+	}
+
+}

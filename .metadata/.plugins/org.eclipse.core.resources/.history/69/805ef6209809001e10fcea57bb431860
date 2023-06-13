@@ -1,0 +1,12 @@
+package Test;
+
+public class A0613_Cal {
+
+	public static void main(String[] args) {
+		int a = Cal.add(10,5); //합
+		int b = Cal.div(10,5); //몫
+		System.out.println(a + " " + b);
+
+	}
+
+}
