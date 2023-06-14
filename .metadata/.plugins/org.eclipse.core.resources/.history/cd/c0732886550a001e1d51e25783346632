@@ -1,0 +1,14 @@
+package a0614;
+
+import java.util.ArrayList;
+
+public class A0614_ArrayList {
+
+	public static void main(String[] args) {
+		
+		//List Interface -> <>
+		ArrayList<String> a = new ArrayList<String>();
+
+	}
+
+}

@@ -1,0 +1,57 @@
+package problems0614;
+
+abstract class Calc {
+	double op1;
+	double op2;
+	
+	void set(double op1, double op2) {
+		this.set(op1, op2);
+	}
+	
+	abstract double calculate();
+}
+
+class Add extends Calc {
+
+	@Override
+	double calculate() {
+		return op1 + op2;
+	}
+	
+}
+
+class Sub extends Calc {
+
+	@Override
+	double calculate() {
+		return op1 - op2;
+	}
+	
+}
+
+class Mul extends Calc {
+
+	@Override
+	double calculate() {
+		return 0;
+	}
+	
+}
+
+class Div extends Calc {
+
+	@Override
+	double calculate() {
+		return 0;
+	}
+	
+}
+
+public class problem2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

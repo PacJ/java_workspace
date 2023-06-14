@@ -1,0 +1,19 @@
+package problems0614;
+
+abstract class Calc {
+	double op1;
+	double op2;
+	
+	void set(double op1, double op2) {
+		
+	}
+}
+
+public class problem2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

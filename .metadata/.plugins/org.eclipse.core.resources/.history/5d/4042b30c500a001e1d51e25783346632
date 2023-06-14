@@ -1,0 +1,27 @@
+package a0613;
+
+class Java {
+	String title;
+	Java(String t) {
+		this.title = t;
+	}
+}
+
+class DB {
+	int n;
+	DB(int n) {
+		this.n = n;
+	}
+	
+	void pr() {
+		System.out.println(n);
+	}
+}
+public class A0614_generic {
+
+	public static void main(String[] args) {
+		//제네릭(generic)
+
+	}
+
+}

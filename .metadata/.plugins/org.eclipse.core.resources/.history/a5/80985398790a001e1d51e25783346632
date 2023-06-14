@@ -1,0 +1,97 @@
+package a0614;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+class Person {
+	private String name;
+	private int id;
+	
+	public Person() {
+
+	}
+	
+	public Person(String name, int id) {
+		this.name = name;
+		this.id = id;
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	int getId() {
+		return id;
+	}
+	
+	public boolean equals(Object obj) {
+		Person p = (Person)obj;
+		
+		if(p.getId()==this.id && p.getName().equals(this.name)) {
+			return true;
+		} 
+		
+		return false;
+	}
+}
+
+class Game {
+	Scanner s = new Scanner(System.in);
+	
+	ArrayList<Person> a = new ArrayList<Person>(5);
+	
+	public Game() { // 초기화 과정
+		a.add(new Person("John", 1443));
+		a.add(new Person("Susan", 5523));
+		a.add(new Person("Edward", 2311));
+		a.add(new Person("Tyrone", 4487));
+
+	}
+
+	void in() {
+		while(true) {
+			System.out.println("이름, id입력");
+			String name = s.next();
+			if(name.equals("stop")) {
+				System.out.println("멈춰!");
+				break;
+			}
+			int id = s.nextInt();
+			
+			Person pp = new Person(name, id); // Person클래스 객체 생성 //
+			
+			if(a.equals(pp)) {
+				System.out.println(pp.getName()+"은 이미 있다.");
+			} else {
+				a.add(pp);
+			}
+		}// ArrayList에 값을 저장함.
+		
+	}
+	
+	void out() {
+		while(true) {
+			Random r = new Random();
+
+			int n = r.nextInt(a.size()); //임의의 정수값 받아서
+			
+			Person p = a.get(n); //리턴
+			String str = p.getName();
+			
+			System.out.println(str+"의 id는?"); 
+			int id = p.getId();
+			
+			Scanner s = new Scanner(System.in);
+			int i = s.nextIn();
+		}
+	}
+}
+public class A0614_Game {
+
+	public static void main(String[] args) {
+		Game g = new Game();
+
+	}
+
+}

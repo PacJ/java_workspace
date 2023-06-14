@@ -1,0 +1,26 @@
+package problems0614;
+
+class Grade {
+	private int english;
+	private int math;
+	private int science;
+	
+	public Grade() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Grade(int english, int math, int science) {
+		this.english = english;
+		this.math = math;
+		this.science = science;
+	}
+}
+
+public class problem1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

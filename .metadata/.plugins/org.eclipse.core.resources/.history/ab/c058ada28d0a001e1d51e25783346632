@@ -1,0 +1,36 @@
+package a0614;
+
+import java.io.InputStream;
+import java.net.InetSocketAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class A0614_Socket {
+
+	public static void main(String[] args) {
+		//서버단
+		ServerSocket ss = null;
+		
+
+		try {
+			ss = new ServerSocket(); // 1. 서버소켓 생성
+			ss.bind(new InetSocketAddress("localhost", 5001));
+			//2. 서버소켓과 서버소켓이 연결될 ip주소와 포트번호
+			
+			while(true) {
+				System.out.println("연결되기를 기다림");
+				Socket so = ss.accept();
+				// 3. 연결요청을 수락하면서 소켓 생성한다.
+				
+				byte b[] = null;
+				String msg = null;
+				
+				InputStream in = so.getInputStream();
+			}
+			
+		} catch {
+			
+		}
+	}
+
+}

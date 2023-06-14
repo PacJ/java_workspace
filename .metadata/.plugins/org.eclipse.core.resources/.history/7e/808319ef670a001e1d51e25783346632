@@ -1,0 +1,39 @@
+package a0614;
+
+class Th extends Thread{
+	
+	String name;
+	Th(String n) {
+		name = n;
+	}
+	
+	public void run() { // Thread의 메인 메소드. Thread 실행 시작.
+		for(int i = 0; i < 10 ; i ++) {
+			System.out.println(name);
+			try {
+				// sleep은 try/catch block으로 묶어줘야 한다.
+				sleep(100);
+			}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class A0614_Thread {
+
+	public static void main(String[] args) {
+		// 스레드 객체 생성하는 두가지
+		//1. Thread 클래스 사용
+		//2. Runnable 인터페이스 사용
+		
+		Th t = new Th("스레드1");
+		Th t2 = new Th("스레드2");
+		
+		t.start();
+		t2.start(0;)
+
+	}
+
+}

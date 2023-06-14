@@ -1,0 +1,46 @@
+package problems0614_2;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+//5. HashSet에 Person객체를저장한다. 
+//학번이같으면 동일한 Person객체라 판단하고 중복저장이 되지 않도록 하게 코드를 작성해라.
+
+class Person {
+	int num;
+	String name;
+	
+	public Person(int num, String name) {
+		this.num = id;
+		this.name = name;
+		if(this.num == num) {
+			
+		}
+	}
+	
+}
+
+public class Problem56 {
+
+	public static void main(String[] args) {
+		Set<Person> s=new HashSet<Person>();
+
+		s.add(new Person(12, "홍길동"));
+
+		s.add(new Person(23, "김길동"));
+
+		s.add(new Person(12, "이길동"));
+
+		Iterator<Person> it=s.iterator();
+
+		while(it.hasNext()){
+
+		Person p=it.next();
+
+		System.out.println(p.num + " " + p.name);
+
+		}
+	}
+
+}

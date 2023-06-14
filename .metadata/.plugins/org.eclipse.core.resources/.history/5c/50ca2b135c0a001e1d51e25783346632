@@ -1,0 +1,16 @@
+package problems0614;
+
+class Grade {
+	private int english;
+	private int math;
+	private int science;
+}
+
+public class problem1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

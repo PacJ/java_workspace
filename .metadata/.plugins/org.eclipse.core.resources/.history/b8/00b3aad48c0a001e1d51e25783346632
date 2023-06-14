@@ -1,0 +1,26 @@
+package a0614;
+
+
+public class A0614_Socket {
+
+	public static void main(String[] args) {
+		//서버단
+		ServerSocket ss = null;
+		
+
+		try {
+			ss = new ServerSocket(); // 1. 서버소켓 생성
+			ss.bind(new InetSocketAddress("localhost", 5001));
+			//2. 서버소켓과 서버소켓이 연결될 ip주소와 포트번호
+			
+			while(true) {
+				System.out.println("연결되기를 기다림");
+				Socket so = ss.accept();
+			}
+			
+		} catch {
+			
+		}
+	}
+
+}

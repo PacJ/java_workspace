@@ -1,0 +1,19 @@
+package a0614;
+
+import java.net.InetSocketAddress;
+import java.net.ServerSocket;
+
+public class A0614_Socket {
+
+	public static void main(String[] args) {
+		//서버단
+		ServerSocket ss = null;
+		
+
+		try {
+			ser = new ServerSocket(); // 서버소켓 생성
+			ser.bind(new InetSocketAddress("localhost", 5001));
+		}
+	}
+
+}

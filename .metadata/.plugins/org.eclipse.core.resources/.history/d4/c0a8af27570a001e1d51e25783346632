@@ -1,0 +1,21 @@
+package a0614;
+
+import java.util.Vector;
+
+public class a0614_Vector {
+
+	public static void main(String[] args) {
+		
+		Vector<Integer> v = new Vector<Integer>();
+		
+		v.add(3);
+		v.add(5);
+		v.add(15938);
+		
+		for(Integer int : v) {
+			System.out.println(v);
+		}
+
+	}
+
+}

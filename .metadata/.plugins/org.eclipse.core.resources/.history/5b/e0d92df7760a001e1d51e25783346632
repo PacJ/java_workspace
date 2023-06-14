@@ -1,0 +1,63 @@
+package a0614;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Person {
+	private String name;
+	private int id;
+	
+	public Person() {
+
+	}
+	
+	public Person(String name, int id) {
+		this.name = name;
+		this.id = id;
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	int getId() {
+		return id;
+	}
+	
+	public boolean equals(Object obj) {
+		
+	}
+}
+
+class Game {
+	Scanner s = new Scanner(System.in);
+	
+	ArrayList<Person> a = new ArrayList<Person>(5);
+	
+	public Game() { // 초기화 과정
+		a.add(new Person("John", 1443));
+		a.add(new Person("Susan", 5523));
+		a.add(new Person("Edward", 2311));
+		a.add(new Person("Tyrone", 4487));
+
+	}
+
+	void in() {
+		while(true) {
+			System.out.println("이름, id입력");
+			String name = s.next();
+			if(name.equals("stop")) {
+				System.out.println("멈춰!");
+				System.exit(0);
+			}
+		}
+	}
+}
+public class A0614_Person {
+
+	public static void main(String[] args) {
+		Game g = new Game();
+
+	}
+
+}

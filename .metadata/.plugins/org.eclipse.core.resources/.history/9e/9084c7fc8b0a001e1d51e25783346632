@@ -1,0 +1,12 @@
+package a0614;
+
+import java.net.ServerSocket;
+
+public class A0614_Socket {
+
+	public static void main(String[] args) {
+		ServerSocket ss = new ServerSocket();
+
+	}
+
+}

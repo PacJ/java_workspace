@@ -15,7 +15,15 @@ class Circle {
 	}
 	
 	public String toString() {
-		return Double.toString(rad *rad*3.14);
+		return rad + "";
+	}
+	
+	public boolean equals(Object obj) { //Object ob = new Circle();
+		if(this.rad==((Circle)obj).rad) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
 
@@ -26,11 +34,11 @@ public class Problem5 {
 
 		Circle b=new Circle(30);
 
-		System.out.println("반지름"+a.rad);
+		System.out.println("반지름"+a);
 
-		System.out.println("반지름"+b.rad);
+		System.out.println("반지름"+b); // 객체 출력 시 toString 자동호출
 
-		if(a.toString().equals(b.toString())) {
+		if(a.equals(b)) { //객체비교 -> 주소값
 			System.out.println("같은 원"); 
 		}
 

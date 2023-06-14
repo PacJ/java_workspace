@@ -1,0 +1,23 @@
+package problems0614_2;
+
+import java.util.HashSet;
+
+//5. HashSet에 Person객체를저장한다. 
+//학번이같으면 동일한 Person객체라 판단하고 중복저장이 되지 않도록 하게 코드를 작성해라.
+
+class Person {
+	int id;
+	
+	public int getId() {
+		return id;
+	}
+}
+
+public class Problem56 {
+
+	public static void main(String[] args) {
+		HashSet<Person> hp = new HashSet<Person>();
+
+	}
+
+}
